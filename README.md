@@ -15,8 +15,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Drewrecker4/NFTCard)
+- Solution URL: (https://drewrecker4.github.io/NFTCard/)
 
 ## My process
 
