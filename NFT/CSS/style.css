@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main-soft-blue: hsl(215, 51%, 70%);
+  --main-cyan: hsl(178, 100%, 50%);
+  --main-dark-blue: hsl(217, 54%, 11%);
+  --main-dark-blue-shadow: hsl(215, 52%, 10%);
+  --main-dark-blue-shadow-2: hsl(220, 54%, 11%);
+  --main-card-dark-blue: hsl(216, 50%, 16%);
+  --main-line-dark-blue: hsl(215, 32%, 27%);
+  --main-white: hsl(0, 0%, 100%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  font-style: normal;
+  font-weight: 300;
+  color: var(--main-white);
+  background: var(--main-dark-blue);
+  padding: 3rem 1rem;
+  font-size: 16px;
+}
+
+@media (min-width: 468px) {
+  body {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--main-white);
+    background: var(--main-dark-blue);
+    padding: 6rem 3rem;
+    font-size: 18px;
+  }
+}
+
+.nft-card-background {
+  padding: 10rem 0;
+  background: var(--main-dark-blue);
+}
+
+.nft-card {
+  border-radius: 10px;
+  margin: auto;
+  max-width: 22rem;
+  background: var(--main-card-dark-blue);
+  color: var(--main-white);
+  padding: 1.5rem;
+  box-shadow: 0px 38px 0px 17px var(--main-dark-blue-shadow);
+}
+
+.img-container {
+  display: grid;
+}
+
+.equilibrium {
+  max-width: 100%;
+  height: auto;
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 5px;
+  opacity: 1;
+  background-color: var(--main-cyan);
+}
+
+@media (min-width: 490px) {
+  .nft-card {
+    box-shadow: 0px 48px 0px 17px var(--main-dark-blue-shadow),
+      0px 45px 0px 53px var(--main-dark-blue-shadow-2);
+  }
+}
+
+.cyan-overlay {
+  background: rgb(0, 255, 247, 0);
+  color: rgb(255, 255, 255, 0);
+  grid-row: 1;
+  grid-column: 1;
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  bottom: 19rem;
+  margin-bottom: -19rem;
+  display: flex;
+}
+
+.cyan-overlay > * {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.cyan-overlay:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255, 1);
+  background: rgb(0, 255, 247, 0.5);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+h1:hover {
+  color: var(--main-cyan);
+  cursor: pointer;
+}
+
+.content-info {
+  display: flex;
+  padding: 5px 0;
+  position: relative;
+}
+
+.content-info > * {
+  flex: 1;
+  padding: 1rem 0;
+  vertical-align: middle;
+}
+
+.content-info .price-container > * {
+  vertical-align: middle;
+}
+
+.content-info .price {
+  color: var(--main-cyan);
+  font-weight: 600;
+}
+
+.content-info .time-remaining {
+  text-align: end;
+}
+
+.time-remaining > * {
+  margin: 0;
+  vertical-align: middle;
+}
+
+span {
+  color: var(--main-soft-blue);
+}
+
+.creator-container {
+  display: flex;
+  gap: 1rem;
+  border-top: 2px solid var(--main-line-dark-blue);
+  padding-top: 10px;
+}
+
+.creator-img-container {
+  flex: 1;
+}
+
+.creator-img {
+  max-width: 100%;
+  border: 1px solid var(--main-white);
+  border-radius: 50%;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.creator-name-container {
+  position: relative;
+  display: flex;
+  flex: 10;
+}
+
+.creator-name-container > * {
+  flex: 1;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.creator-name {
+  color: var(--main-white);
+  width: 30px;
+}
+
+.creator-name:hover {
+  color: var(--main-cyan);
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
